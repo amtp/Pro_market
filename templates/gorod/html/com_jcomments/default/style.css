@@ -1,0 +1,207 @@
+#comments {
+	margin-top:15px;
+}
+.rbox{
+padding:10px;
+margin-bottom: 25px;
+border-radius:3px;
+-webkit-box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0 2px 6px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         0 2px 6px 0px rgba(0, 0, 0, 0.2);		
+}
+.rbox.super_comment {
+    background: #f6f6f9 none repeat scroll 0 0;
+    border-left: 3px solid #a94442;
+    margin-left: 20px;
+	
+-webkit-box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0 2px 6px 0px rgba(0, 0, 0, 0.2);
+box-shadow:         0 2px 6px 0px rgba(0, 0, 0, 0.2);		
+}
+.comment-avatar {
+display: inline-block;
+vertical-align: top;
+width: 12%;
+margin-right: 0;
+position: relative;
+margin-top: 15px;
+}
+.comment-avatar:after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: url("../images/list_mask1.png") 0 0 no-repeat;	
+}
+.comment-avatar img{width:60px}
+.comment-box {
+	display:inline-block;
+	vertical-align:top;
+	width:85%
+}
+.comment-author {
+    color: #353761;
+    font-size: 14px;
+}
+.comment-author span {
+	border-bottom:1px dashed
+}
+.comment-author sup {
+font-size: 11px;
+color: #999;
+}
+.comment-date {
+    color:#666;
+    display:inline-block;
+    font-size:12px;
+}
+.comment-body {
+    border-left:3px solid #66B284;
+    line-height:1.3;
+    margin:8px 5px 3px;
+    padding:3px 10px;
+}
+.comment-body br {
+    display:block;
+    height:5px;
+    margin:3px;
+}
+span.comments-buttons {
+	display:block;
+	text-align:right;
+	font-size:12px;
+}
+span.comments-buttons a {
+	display:inline-block;
+	text-decoration:none;
+	border-bottom:1px dashed;
+	color:#999;
+}
+.comments-inline-report {
+	width:50%;
+	margin: 10px auto;
+	padding:10px;
+	border:1px solid #ccc;
+}
+input#comments-report-form-reason {
+	padding:8px;
+	border:1px solid #ccc
+}
+#comments-report-form-buttons .btn {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:5px;
+}
+#comments-report-form-buttons .btn a {
+	color:#fff;
+	display:block;
+	text-decoration: none;
+	padding:5px 15px;
+	background:#353761
+}
+.subs {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+#comments-form-buttons {
+	display:inline-block;
+	vertical-align:middle;	
+	 margin-top: 10px;
+}
+#comments-form-send a {
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	padding: 8px 20px;
+	background:#0173c1;
+	text-transform:uppercase;
+font-size: 18px;
+font-weight: 100;
+text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+}
+#comments-form-send a:hover{
+	background:#013e83;
+}
+.comments-form-message-error {
+    background-color: #f2dede;
+    color: #a94442;
+    margin: 10px 0;
+    padding: 10px;
+	text-align:center
+}
+.comments-form-message-info {
+    background-color: #dff0d8;
+    color: #3c763d;
+    margin: 10px 0;
+    padding: 10px;
+	text-align:center
+}
+input#comments-form-town{
+	padding:8px;
+	border:1px solid #ccc;
+	width:50%
+}
+.otziv_rating{
+	display:inline-block;
+	vertical-align:middle;
+	width:45%
+}
+.otziv_rating .rating{display:block;color:#0066cc}
+.otziv_info{
+	display:inline-block;
+	vertical-align:middle;
+	width:55%	
+}
+.label_rating{
+	display:inline-block;
+	vertical-align:middle;
+	width:50%;
+	font-size:13px;
+}
+.star_rating{
+	display:inline-block;
+	vertical-align:middle;
+	width:45%		
+}
+.star_rating input.rsform-radio + label {
+padding: 2px 6px;
+font-size: 11px;
+}
+.star_rating input.rsform-radio + label:after{
+	
+}
+.otziv_info span{
+	display:block;
+	font-size:14px;
+	color:#666
+}
+.otziv_info span.firstWord{
+	display:inline-block;
+	color:#EE3F58
+}
+.otziv_info span i,.otziv_info small i {
+	color:#ccc;
+	font-size:13px;
+	margin-right:5px;
+}
+.otziv_info small{
+	font-size:12px;
+	color:#ff6600;
+	display:block;
+	margin-top:5px;
+}
+.text_comment{margin-top:10px}
+.text_comment textarea{
+	border:1px solid #ccc;padding:10px;font-family:Roboto;font-size:13px;width:97%;
+	height: 5.4375rem!important;
+}
+.otziv_rating #comments-form-send{
+	text-align:center;
+}
+
+.otziv_rating #comments-form-send a{display:inline-block}
+.otziv_info .firstWord {font-weight:400}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="jcomments" version="2.5">
+	<name>JComments - AutoSubscribe</name>
+	<creationDate>01/08/2013</creationDate>
+	<author>smart</author>
+	<copyright>Copyright 2006-2013 JoomlaTune.ru All rights reserved!</copyright>
+	<authorEmail>smart@joomlatune.ru</authorEmail>
+	<authorUrl>http://www.joomlatune.ru</authorUrl>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.2.1</version>
+	<description>PLG_JCOMMENTS_AUTOSUBSCRIBE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="autosubscribe">autosubscribe.php</filename>
+		<folder>fields</folder> 
+	</files>
+	<languages folder="language">
+	    <language tag="en-GB">en-GB/en-GB.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="en-GB">en-GB/en-GB.plg_jcomments_autosubscribe.sys.ini</language>
+	    <language tag="es-ES">es-ES/es-ES.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="es-ES">es-ES/es-ES.plg_jcomments_autosubscribe.sys.ini</language>
+	    <language tag="lt-LT">lt-LT/lt-LT.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="lt-LT">lt-LT/lt-LT.plg_jcomments_autosubscribe.sys.ini</language>
+	    <language tag="nl-NL">nl-NL/nl-NL.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="nl-NL">nl-NL/nl-NL.plg_jcomments_autosubscribe.sys.ini</language>
+	    <language tag="ru-RU">ru-RU/ru-RU.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="ru-RU">ru-RU/ru-RU.plg_jcomments_autosubscribe.sys.ini</language>
+	    <language tag="th-TH">th-TH/th-TH.plg_jcomments_autosubscribe.ini</language>
+	    <language tag="th-TH">th-TH/th-TH.plg_jcomments_autosubscribe.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/jcomments/autosubscribe/fields">
+				<field
+					name="object_group"
+					type="jcommentsobjectgroup"
+					default="com_content"
+					multiple="true"
+					size="10"
+					label="PLG_JCOMMENTS_AUTOSUBSCRIBE_FIELD_COMPONENTS_LABEL"
+					description="PLG_JCOMMENTS_AUTOSUBSCRIBE_FIELD_COMPONENTS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="JComments AutoSubscribe">http://www.joomlatune.ru/updates/plg-jcomments-autosubscribe.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN"
+    "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+
+<extension version="3.8" type="template" client="site" method="upgrade">
+    <name>gorod</name>
+    <creationDate>2020</creationDate>
+    <author>amtpg</author>
+    <authorEmail>amtpg5@gmail.com</authorEmail>
+    <authorUrl>http://516.ru</authorUrl>
+    <copyright>Copyright (C) 2020 amtpg</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+    <version>1.5</version>
+    <description><![CDATA[
+      
+    ]]></description>
+
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>less</folder>
+        <folder>partial</folder>
+        <folder>php</folder>
+        <folder>scss</folder>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>offline.php</filename>
+        <filename>raw.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+
+    <positions>
+        <position>login</position>
+        <position>left</position>
+		<position>right</position>
+		<position>breadcrumb</position>
+    </positions>
+
+    <config>
+        <fields name="params">
+
+			<fieldset name="params_gorod">	
+			<!--Число элементов-->	
+				<field name="count_menu" type="list" default="1" label="Показ числа элементов в меню" description="На каждом пункте меню есть показ числа элементов в этом меню. Например в Каталоге организаций, в каждой рубрике указано количество организаций. Данная опция включает или отключает показ этого количества. Включение этой опции существенно увеличит нагрузку на сервер">
+				  <option value="0">Нет</option>
+				  <option value="1">Да</option>
+				</field>
+			<!--Кто ставит рейтинги-->	
+				<field name="rating_user" type="list" default="0" label="Кто может ставить рейтинги" description="Выберите, кто может оставлять рейтинги на Вашем портале. Во избежинии накруток рейтинга, выберите Зарегистрированных пользователей">
+				  <option value="0">Все пользователи</option>
+				  <option value="1">Только зарегистрированные пользователи</option>
+				</field>
+			<!--Символ валюты-->
+			<field name="valuta" class="" type="text" filter="raw" default=""
+					label="Cимвол валюты"
+					description="Введите символ валюты вашей страны" />			
+			</fieldset>
+			
+			<fieldset name="gorod">
+			<!--Страны-->
+			<field name="strana" type="list" default="rus" label="Страна" description="Выберите Вашу страну">
+				<option value="rus">Россия</option>
+				<option value="kz">Казахстан</option>
+				<option value="rb">Беларусь</option>
+				<option value="uk">Украина</option>
+				<option value="kg">Киргизия</option>
+			</field>
+			
+			<!--Рейтинг-->
+			<field name="rating_user" type="list" default="1" label="Рейтинг только зарегистрированным" description="Выберите могут ли не зарегистрированные пользователи ставить рейтинг">
+				<option value="0">Нет</option>
+				<option value="1">Да</option>
+			</field>	
+
+			<!--Zoom-->	
+				<field name="vm_image" type="list" default="1" label="Показ картинок в товарах интернет-магазина" description="Выберите вариант отображения картинок в товарах интернет-магазина">
+				  <option value="0">Стандартные</option>
+				  <option value="1">ZOOM</option>
+				</field>			
+			
+			<!--Праздники-->
+			<field name="holiday" type="list" default="0" label="Праздник" description="Укажите, какую иконку праздника Вы хотите прикрепить для отображения у логотипа">
+				<option value="0">Нет</option>
+				<option value="1">Рождество</option>
+				<option value="2">14 февраля</option>
+				<option value="3">23 февраля</option>
+				<option value="4">8 марта</option>
+				<option value="5">1 мая</option>
+				<option value="6">9 мая</option>
+				<option value="7">1 июня</option>
+				<option value="8">12 июня</option>
+				<option value="10">1 сентября</option>
+				<option value="11">1 октября</option><!--День пожилых людей-->
+				<option value="12">5 октября</option><!--День учителя-->
+				<option value="13">4 ноября</option><!--День народного единства-->
+				<option value="14">31 декабря</option>
+			</field>
+			<!--Текст иконки праздника-->	
+				<field name="holiday_text" class="" type="text" default=""
+					label="Текст иконки праздника"
+					description="Введите текст иконки праздника" />				
+			<!--Ссылка на страницу прадника-->
+				<field name="holiday_link" class="" type="text" default=""
+					label="Ссылка иконки праздника"
+					description="Введите ссылку иконки праздника" />		
+	
+			<!--Город-->
+			<field name="gorod" class="" type="text" default="516.ru"
+					label="Город"
+					description="Введите название города" />
+			<!--Центре карты-->
+			<field name="center_map" class="" type="text" default="58.58267654585965,49.570856499999984"
+					label="Центр карты"
+					description="Укажите координаты центра карты." />					
+			<!--Возраст-->	
+				<field name="vozrast" class="" type="text" default="16+"
+					label="Возрастное ограничение"
+					description="Введите возрастное ограничение" />						
+			
+			<!--ЛОГОТИП-->
+				<field name="icon_logo" class="" type="text" default="fa fa-bank"
+					label="Иконка логотипа"
+					description="Вставьте код иконки логотипа" />
+					
+				<field name="logo1" class="" type="text" default="Справочная служба"
+					label="Вступление логотипа"
+					description="Введите слово или несколько для вступления логотипа" />
+				<field name="logo1_color" class="" type="color" default="#3b5998"
+					label="Цвет вступления логотипа"
+					description="Введите код цвета для вступления логотипа" />			
+					
+				<field name="logo2" class="" type="text" default="Город"
+					label="Окончание логотипа"
+					description="Введите слово или несколько для окончания логотипа" />
+				<field name="logo2_color" class="" type="color" default="#eb4120"
+					label="Цвет окончания логотипа"
+					description="Введите код цвета для окончания логотипа" />					
+					
+				<field name="logo_slogan" class="" type="text" default="Справочная служба 516"
+					label="Слоган"
+					description="Введите слоган" />		
+				<field name="logo_slogan_color" class="" type="color" default="#ccc"
+					label="Цвет слогана"
+					description="Введите код цвета слогана" />	
+
+			<!-- ИЗОБРАЖЕНИЕ ЛОГОТИПА -->
+			<field name="note" type="note" label="При выборе изображения текстовый логотип будет заменен на это изображение" close="true" class="alert" />
+			<field  name="logo_img" type="media" default="" label="Главный логотип(190х55)" description="Выберите основное изображение логотипа. Размер изображения 190х55" >
+				
+			</field>
+			
+			<field  name="mini_logo_img" type="media" default="" label="Логотип в мобильной версии(155х40)" description="Выберите изображение логотипа для мобильной версии. Размер изображения 155х40" >
+				
+			</field>			
+			
+			<!--Бегущая строка-->	
+				<field name="stroka" class="" type="textarea" default="" filter="saferaw" col="50" row="10"
+					label="Бегущая строка"
+					description="Напишите текст бегущей строки под поиском" />						
+			</fieldset>
+			
+			<fieldset name="colors">
+			<!--Цвета-->	
+				<field name="color1" class="" type="color" default="#3b5998"
+					label="Цвет основных кнопок"
+					description="Введите код цвета основных кнопок" />
+					
+				<field name="color_link" class="" type="color" default="#0066сс"
+					label="Цвет ссылок"
+					description="Введите код цвета ссылок" />	
+					
+				<field name="color_body" class="" type="color" default="#2a2a2a"
+					label="Цвет шрифта"
+					description="Введите код цвета шрифта на всем сайте" />		
+					
+				<field name="color_icons" class="" type="color" default="#eb4120"
+					label="Цвет иконок"
+					description="Введите код цвета мконок" />
+					
+				<field name="color_ic_kat" class="" type="color" default="#006dcc"
+					label="Цвет иконок в каталогах"
+					description="Введите код цвета иконок в карточках каталогов" />					
+					
+				<field name="color_tag" class="" type="color" default="#ff0000"
+					label="Цвет хэштегов"
+					description="Введите код цвета хэштегов" />
+
+				<field name="color_h" class="" type="color" default="#013e83"
+					label="Цвет заголовков"
+					description="Введите код цвета заголовков" />					
+			 
+			 </fieldset>			
+			
+			<fieldset name="virtuemart">
+			<!--Цвета VIRTUEMART-->
+				<field name="color_price" type="color" default="eb4120"
+					label="Цвет цены товаров"
+					description="Выберите цвет цены товаров в интрнет-магазине" />
+				<field name="color_addtocart" type="color" default="3b5998"
+					label="Цвет кнопки Купить"
+					description="Выберите цвет кнопки купить в интрнет-магазине" />
+				<field name="color_new" type="color" default="3c763d"
+					label="Цвет иконки НОВИНКА"
+					description="Выберите цвет иконки НОВИНКА в интрнет-магазине" />
+				<field name="color_hit" type="color" default="eb4120"
+					label="Цвет иконки ХИТ продаж"
+					description="Выберите цвет иконки ХИТ продаж в интрнет-магазине" />
+				<field name="color_sale" type="color" default="ff6600"
+					label="Цвет иконки СКИДКА"
+					description="Выберите цвет иконки СКИДКА в интрнет-магазине" />					
+			</fieldset>	
+			
+			<!--МОНЕТИЗАЦИЯ-->
+			<fieldset name="yandex_money">
+				<!--монетизация-->
+				<field name="money_no" type="list" default="1" label="Монетизация" description="Выберите нужна ли в портале монетизация">
+					<option value="0">Нет</option>
+					<option value="1">Да</option>
+				</field>	
+				<!--яндекс.кошелек-->				
+				<field name="money" class="" type="text" default=""
+					label="Яндекс.Кошелек"
+					description="Введите номер Яндекс.Кошелька" />
+			</fieldset>			
+			
+			<fieldset name="social">
+			<!--Соц. сети-->	
+				<field name="vk_like" class="" type="text" default=""
+					label="ID виджета 'Мне нравится'"
+					description="ID виджета для кнопки Мне нравится в шапке сайта " />
+				<field name="vk_group" class="" type="text" default=""
+					label="ID виджета группы ВКонтакте"
+					description="ID виджета для размещения группы ВКонтакте" />					
+				<field name="ya_knopki" type="list" default="1" label="Кнопки поделиться" description="Выберите, необходимы ли кнопки Поделиться в социальных сетях на страницах портала">
+				  <option value="0">Нет</option>
+				  <option value="1">Да</option>
+				</field>					
+			 </fieldset>	
+			<!--Счетчики-->
+			<fieldset name="counter">
+				<field name="yandex" class="" type="textarea" default="" filter="raw" col="50" row="10"
+					label="Яндекс.Метрика"
+					description="Вставьте код счетчика Яндекс.Метрики" />				
+			</fieldset>			 
+		</fields>			 
+    </config>
+
+</extension>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JSCSSMANIPULATE</name>
+	<license>Open Source License, GPL v2 based</license>
+	<author>Arkadiy Sedelnikov</author>
+	<authorEmail>a.sedelnikov@gmail.com</authorEmail>
+	<authorUrl>joomline.ru</authorUrl>
+	<creationDate>19.09.2019</creationDate>
+	<copyright>2017-2019 Arkadiy Sedelnikov</copyright>
+	<version>1.4.0</version>
+	<description>PLG_JSCSSMANIPULATE_DESCRIPTION</description>
+	<files>
+		<filename plugin="jscssmanipulate">jscssmanipulate.php</filename>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+		<folder>lib</folder>
+	</files>
+	<config addfieldpath="/plugins/system/jscssmanipulate/elements">
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+						name="scripts"
+						type="javascript"
+						label="PLG_JSCSSMANIPULATE_SCRIPTS"
+						description="PLG_JSCSSMANIPULATE_SCRIPTS_DESC"
+				/>
+				<field
+						name="css"
+						type="stylesheet"
+						label="PLG_JSCSSMANIPULATE_CSS"
+						description="PLG_JSCSSMANIPULATE_CSS_DESC"
+				/>
+				<field
+						name="sassless"
+						type="sassless"
+						label="PLG_JSCSSMANIPULATE_SASSLESS"
+						description="PLG_JSCSSMANIPULATE_SASSLESS_DESC"
+				/>
+				<field
+						name="cut_script"
+						type="textarea"
+						cols="500"
+						rows="10"
+						label="PLG_JSCSSMANIPULATE_SCRIPT"
+						description="PLG_JSCSSMANIPULATE_SCRIPT_DESC"
+				/>
+
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+						name="debug"
+						type="radio"
+						default="0"
+						label="PLG_JSCSSMANIPULATE_DEBUG"
+						description="PLG_JSCSSMANIPULATE_DEBUG_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="minify"
+						type="radio"
+						default="0"
+						label="PLG_JSCSSMANIPULATE_ENABLE_MINIFY"
+						description="PLG_JSCSSMANIPULATE_ENABLE_MINIFY_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="enable_foother_scripts_ordering"
+						type="radio"
+						default="0"
+						label="PLG_JSCSSMANIPULATE_ENABLE_FOOTHER_SCRIPTS_ORDERING"
+						description="PLG_JSCSSMANIPULATE_ENABLE_FOOTHER_SCRIPTS_ORDERING_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="enable_foother_css_ordering"
+						type="radio"
+						default="0"
+						label="PLG_JSCSSMANIPULATE_ENABLE_FOOTHER_CSS_ORDERING"
+						description="PLG_JSCSSMANIPULATE_ENABLE_FOOTHER_CSS_ORDERING_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field
+						name="minify_js_position"
+						type="radio"
+						default="head"
+						label="PLG_JSCSSMANIPULATE_MINIFY_JS_POSITION"
+						description="PLG_JSCSSMANIPULATE_MINIFY_JS_POSITION_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="head">PLG_JSCSSMANIPULATE_HEAD</option>
+					<option value="bottom">PLG_JSCSSMANIPULATE_BOTTOM</option>
+				</field>
+				<field
+						name="minify_css_position"
+						type="radio"
+						default="head"
+						label="PLG_JSCSSMANIPULATE_MINIFY_CSS_POSITION"
+						description="PLG_JSCSSMANIPULATE_MINIFY_CSS_POSITION_DESC"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="head">PLG_JSCSSMANIPULATE_HEAD</option>
+					<option value="bottom">PLG_JSCSSMANIPULATE_BOTTOM</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers><server type="extension" priority="1" name="JsCssManipulate">https://joomline.net/update.html?extension_id=9.xml</server></updateservers>
+</extension>

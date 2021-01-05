@@ -1,0 +1,5 @@
+Order deny,allow
+deny from all
+Allow from 2a02:2698:2c22:6696:a154:ca7e:eade:f608
+
+

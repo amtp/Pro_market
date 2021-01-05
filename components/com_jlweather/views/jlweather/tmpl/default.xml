@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Вертикально">
+		<message>Вертикальное отображение погоды</message>
+	</layout>
+	<state>
+		<name>Вертикально</name>
+		<description>Вертикальное отображение погоды</description>
+	</state>
+	<fields name="params" >
+        <fieldset name="basic">
+           <field name="citymenu" type="text" label="Укажите город" description="Укажите город для погоды в формате 692#Кемерово; где 692 код города, Кемерово это название города" default="" />
+        </fieldset>
+    </fields>
+</metadata>

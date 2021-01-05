@@ -1,0 +1,82 @@
+JBCookies 3.1.6 (27-04-2020)
+================================================================================
+~ 2-3 bugs fixes.
+~ Dutch language update by grotego.
+
+JBCookies 3.1.5 (23-03-2020)
+================================================================================
++ Add option parameter bootstrap 4 for modal.
++ Add more options parameters in background colors and link colors.
+			
+JBCookies 3.1.4 (19-03-2020)
+================================================================================
++ Add option parameter remove cache extensions.
+			
+JBCookies 3.1.3 (18-03-2020)
+================================================================================
++ Add option parameter show same subdomain.
+			
+JBCookies 3.1.2 (06-10-2018)
+================================================================================
++ Add option parameter decline icon.
+			
+JBCookies 3.1.1 (28-08-2018)
+================================================================================
++ Fix error in file language it-IT.mod_jbcookies.ini by micropalla (thanks).
+			
+JBCookies 3.1.0 (09-08-2018)
+================================================================================
++ Fix error in cookie duration.
++ Add Languages:  Greek (el-GR) (by Makis Chatzopoulos), French (fr-FR) (by Pascal)
+			
+JBCookies 3.0.9 (01-07-2018)
+================================================================================
++ Add option parameter duration cookie.
++ Add option parameter for Bootstrap 2-3.
++ Add option parameter for decline cookies.
++ Add template custom.
++ Add template decline.
++ Add more languages.
++ Add media language install.
++ Add script.install.
+
+Languages:  English (en-GB),
+			Spanish (es-ES),
+			Catalan (ca-ES),
+			Italian (it-IT),
+			German (de-DE), Alemany
+			Dutch (nl-NL), Holandes
+			Polish (pl-PL), Polac
+			Portuguese (pt-PT), Portugues
+			Swedish (sv-SE), Sueco
+
+JBCookies 3.0.8 (29-05-2018)
+================================================================================
+~ Modify links buttons in backend.
++ Add more parameters options.
+
+JBCookies 3.0.7 (18-05-2018)
+================================================================================
++ Add German by Martin Leibetseder.
++ Add new update extension.
+
+JBCookies 3.0.6 (08-06-2015)
+================================================================================
++ No index follow
+
+JBCookies 3.0.5 (13-05-2015)
+================================================================================
++ Add select article in modal
++ Add Italian by Emanuele
+
+JBCookies 3.0.4 (19-03-2015)
+================================================================================
+~ Error in jblanguages new installation
++ Add fieldset select framework modal: Bootstrap or Uikit
+
+JBCookies 3.0.3 (02-03-2015)
+================================================================================
+~ Error in jblanguages header in modal
++ Add fieldset advanced
++ Add update module
+

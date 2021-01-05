@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>JLWeather</name>
+	<creationDate>05.02.2018</creationDate>
+	<author>JoomLine</author>
+	<authorEmail>sale@joomline.ru</authorEmail>
+	<authorUrl>https://joomline.ru</authorUrl>
+	<copyright>Copyright 2010-2018 JoomLine.ru All rights reserved</copyright>
+	<license>GNU/GPL v.3 or later.</license>
+	<version>3.0.4</version>
+	<description>COM_JLWEATHER_XML_DESCRIPTION</description>
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<filename>jlweather.php</filename>
+		<folder>img</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+		<languages folder="languages/site">
+			<language tag="en-GB">en-GB/en-GB.com_jlweather.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_jlweather.ini</language>
+			<language tag="uk-UA">uk-UA/uk-UA.com_jlweather.ini</language>
+		</languages>
+	<administration>
+		<menu>COM_JLWEATHER_MAIN_MENU</menu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jlweather.php</filename>
+			<folder>views</folder>
+		</files>
+		<languages folder="languages/admin">
+			<language tag="ru-RU">ru-RU/ru-RU.com_jlweather.sys.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.com_jlweather.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jlweather.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jlweather.ini</language>
+			<language tag="uk-UA">uk-UA/uk-UA.com_jlweather.sys.ini</language>
+            <language tag="uk-UA">uk-UA/uk-UA.com_jlweather.ini</language>
+		</languages>		
+	</administration>
+<updateservers><server type="extension" priority="1" name="Joomline">http://joomline.net/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=2&amp;dummy=extension.xml</server></updateservers>
+</extension>

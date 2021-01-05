@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>System - Mdata</name>
+    <author>amtp</author>
+    <creationDate>Decemder 2020</creationDate>
+    <copyright>Copyright (C) 2018 - 2020 amtp. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later.</license>
+    <authorEmail>amtpg5@gmail.com</authorEmail>
+    <authorUrl>www.516.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>plugin to register mdata library.</description>
+
+    <files>
+        <filename plugin="mdata">mdata.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>

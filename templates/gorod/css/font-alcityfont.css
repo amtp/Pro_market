@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'alcityfont';
+  src:  url('../fonts/alcityfont.eot?alrenu');
+  src:  url('../fonts/alcityfont.eot?alrenu#iefix') format('embedded-opentype'),
+    url('../fonts/alcityfont.ttf?alrenu') format('truetype'),
+    url('../fonts/alcityfont.woff?alrenu') format('woff'),
+    url('../fonts/alcityfont.svg?alrenu#alcityfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-samt"], [class*=" icon-samt"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'alcityfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-samtx01:before {
+  content: "\e900";
+}
+.icon-samtx02:before {
+  content: "\e901";
+}
+.icon-samtx03:before {
+  content: "\e902";
+}
+.icon-samtx04:before {
+  content: "\e903";
+}
+.icon-samtx05:before {
+  content: "\e904";
+}
+.icon-samtx06:before {
+  content: "\e905";
+}
+.icon-samtx07:before {
+  content: "\e906";
+}
+.icon-samtx08:before {
+  content: "\e907";
+}
+.icon-samtx09:before {
+  content: "\e908";
+}
+.icon-samtx010:before {
+  content: "\e909";
+}
+.icon-samtx011:before {
+  content: "\e90a";
+}
+.icon-samtx012:before {
+  content: "\e90b";
+}
+.icon-samtx013:before {
+  content: "\e90c";
+}
+.icon-samtx014:before {
+  content: "\e90d";
+}
+.icon-samtx015:before {
+  content: "\e90e";
+}
+.icon-samtx016:before {
+  content: "\e90f";
+}
+.icon-samtx017:before {
+  content: "\e910";
+}
+.icon-samtx018:before {
+  content: "\e911";
+}
+.icon-samtx019:before {
+  content: "\e912";
+}
+.icon-samtx020:before {
+  content: "\e913";
+}
+.icon-samtx021:before {
+  content: "\e914";
+}
+.icon-samtx022:before {
+  content: "\e915";
+}
+.icon-samtx023:before {
+  content: "\e916";
+}
+.icon-samtx024:before {
+  content: "\e917";
+}
+.icon-samtx025:before {
+  content: "\e918";
+}
+.icon-samtx026:before {
+  content: "\e919";
+}
+.icon-samtx027:before {
+  content: "\e91a";
+}
+.icon-samtx029:before {
+  content: "\e91b";
+}
+.icon-samtx030:before {
+  content: "\e91c";
+}
+.icon-samtx031:before {
+  content: "\e91d";
+}
+.icon-samtx032:before {
+  content: "\e91e";
+}
+.icon-samtx033:before {
+  content: "\e91f";
+}
+.icon-samtx034:before {
+  content: "\e920";
+}
+.icon-samtx035:before {
+  content: "\e921";
+}
+.icon-samtx036:before {
+  content: "\e922";
+}
+.icon-samtx037:before {
+  content: "\e923";
+}
+.icon-samtx038:before {
+  content: "\e924";
+}
+.icon-samtx039:before {
+  content: "\e925";
+}
+.icon-samtx040:before {
+  content: "\e926";
+}
+.icon-samtx041:before {
+  content: "\e927";
+}
+.icon-samtx042:before {
+  content: "\e928";
+}
+.icon-samtx043:before {
+  content: "\e929";
+}
+.icon-samtx044:before {
+  content: "\e92a";
+}
+.icon-samtx045:before {
+  content: "\e92b";
+}
+.icon-samtx046:before {
+  content: "\e92c";
+}
+.icon-samtx047:before {
+  content: "\e92d";
+}
+.icon-samtx048:before {
+  content: "\e92e";
+}
+.icon-samtx049:before {
+  content: "\e92f";
+}
+.icon-samtx050:before {
+  content: "\e930";
+}
+.icon-samtx051:before {
+  content: "\e931";
+}
+.icon-samtx052:before {
+  content: "\e932";
+}
+.icon-samtx053:before {
+  content: "\e933";
+}
+.icon-samtx054:before {
+  content: "\e934";
+}
+.icon-samtx055:before {
+  content: "\e935";
+}
+.icon-samtfacebook:before {
+  content: "\e936";
+}
+.icon-samtinstagram:before {
+  content: "\e937";
+}
+.icon-samtstream:before {
+  content: "\e938";
+}
+.icon-samtvk:before {
+  content: "\e939";
+}

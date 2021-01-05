@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+		<fieldset name="settings" label="COM_JLWEATHER_FIELDSET_CONFIG_LABEL">
+			<field
+					name="key"
+					type="text"
+					default=""
+					label="COM_JL_WEATHER_API_KEY"
+					description="COM_JL_WEATHER_API_KEY_DESC"
+			/>
+			<field
+					name="hoffset"
+					type="text"
+					label="TIME_DIFFERENCE"
+					default="4"
+					description=""
+			/>
+			<field
+					name="cachetime"
+					type="text"
+					label="LIFETIME_CACHE"
+					default="3"
+					description=""
+			/>
+			<field
+					name="enablednow"
+					type="list" default="0"
+					label="COM_JL_WEATHER_API_ENABLEDNOW"
+					description="COM_JL_WEATHER_API_ENABLEDNOW_DESC">
+				<option value="0">Нет</option>
+				<option value="1">Да</option>
+			</field>
+			<field
+					name="enabled_five_days"
+					type="list" default="0"
+					label="COM_JL_WEATHER_API_FIVE_DAYS"
+					description="COM_JL_WEATHER_API_FIVE_DAYS_DESC">
+				<option value="0">Нет</option>
+				<option value="1">Да</option>
+			</field>
+			<field type="spacer" />
+			<field
+					name="citylist"
+					type="text"
+					size="100"
+					label="CITY"
+					default="1503901#Кемерово,703448#Киев"/>
+		</fieldset>	
+	</config>

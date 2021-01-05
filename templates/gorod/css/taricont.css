@@ -1,0 +1,571 @@
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-12, .col-md-4, .col-lg-4, .col-xl-4, .col-12, .col-xl-11 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.custom *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tarif-options .option-cost {
+    position: relative;
+    background: white;
+}
+
+.align-items-stretch {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.service-options.tarif-options .option-link, .service-options.tarif-options .option-link-p {
+
+}
+
+.tarif-options .option-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    height: calc(100% - 60px);
+    margin: 30px 0 20px;
+    background: #eef0f5;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition: .2s all;
+}
+
+.tarif-options .option-link-p {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    height: calc(100% - 60px);
+    margin: 30px 0 20px;
+    background: #fceedb;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    transition: .2s all;
+}
+
+.justify-content-center a, .justify-content-center a:visited {
+    color: #3C91E6;
+}
+
+.tarif-options .option-header {
+    position: relative;
+}
+
+.mj-block-heading {
+    color: #020202;
+    font-style: normal;
+    font-weight: 500;
+    padding: 1.25em 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.mj-big-blue {
+    font-weight: 500;
+    color: #3C91E6;
+}
+
+
+.abonement-price-help {
+    padding: 8px 16px 8px 16px;
+    background: white;
+    box-shadow: 0 4px 24px rgba(114, 128, 170, 0.32);
+    text-transform: none;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.abonement-price-help > li {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px #DDDDDD dashed;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #767B91;
+    line-height: 20px;
+    justify-content: space-between;
+}
+
+.abonement-price-help > li .column1 {
+    white-space: nowrap;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.abonement-price-help > li .primary, .abonement-price-help > li .column1 .first-line {
+    color: #333333;
+    font-size: 16px;
+}
+
+.abonement-price-help .first-line {
+    margin-bottom: 4px;
+}
+
+.abonement-price-help > li .column2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tarif-options .option-has {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mj-paragraph-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mj-paragraph-list > li {
+    position: relative;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.mj-paragraph-list > li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: .5em;
+    border-radius: 50%;
+}
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.flex-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.service-options.tarif-options .option-has {
+    height: calc(100% - 10em);
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.mj-paragraph {
+    color: #020202;
+}
+
+.service-options.tarif-options .option-has > * {
+    margin: 16px 0;
+}
+
+.mj-paragraph-list.no-margins {
+    margin: 0;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+.mj-blue-button {
+    color: #fff;
+    background: #3C91E6;
+}
+
+.mj-button {
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: .15s all;
+}
+
+.mj-button, button, input[type=button], input[type=submit] {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+
+
+.css-tooltipped .css-tooltip, .css-tooltipped .css-tooltip-992 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.css-tooltipped:hover .css-tooltip {
+    display: block;
+}
+
+.abonement-price-help > li .discount {
+    font-size: 13px;
+    border-radius: 20px;
+    color: #20BF55;
+    background: #d2f2dd;
+    padding: 0 10px;
+    margin-left: 10px;
+    display: inline-block;
+    height: 20px;
+}
+
+.logo_block {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
+}
+
+ul.breadcrumb {
+    margin: 0px 0;
+}
+
+.service-options {
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+.tusmar {
+    margin-top: 20px;
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+.justify-content-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+}
+
+
+
+
+
+.admin-switch {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 22px;
+    background: #EEF0F5;
+    cursor: pointer;
+}
+.admin-switch:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 22px;
+    background: #FF6600;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+    transition: .2s all;
+}
+.admin-switch .admin-switch__on {
+    color: #767B91;
+}
+.admin-switch.state-on .admin-switch__on {
+    color: white;
+}
+.admin-switch.state-on:before {
+    background: #20BF55;
+    left: 50%;
+}
+.admin-switch .admin-switch__off {
+    color: white;
+}
+.admin-switch.state-on .admin-switch__off {
+    color: #767B91;
+}
+.admin-switch__on, .admin-switch__off {
+    user-select: none;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    transition: .2s all;
+}
+
+
+@media only screen and (min-width: 320px){
+    .mj-small-text {
+        line-height: 18px;
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .mj-small-text {
+        line-height: 20px;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 320px) {
+    .admin-switch.tarif-switch {
+        width: 294px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .admin-switch.tarif-switch {
+        width: 254px;
+    }
+}
+@media only screen and(min-width: 992px){
+    .admin-switch.tarif-switch {
+        width: 294px;
+    }
+}
+@media (min-width: 992px) {
+    .flex-lg-row {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}
+
+
+@media only screen and (min-width: 960px) {
+    .css-tooltipped:hover .css-tooltip-992 {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    .mj-block-heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .mj-big-blue {
+        font-size: 48px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tarif-service-options.tarif-options .option-has {
+        height: 37em;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .tarif-service-options.tarif-options .option-has {
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .tarif-options .option-has {
+        height: 32em;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .tarif-options .option-has {
+        padding: 24px 20px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .mj-paragraph {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .mj-paragraph-list {
+        margin: 24px 0;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    .mj-paragraph-list > li:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .mj-paragraph-list > li {
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .service-options.tarif-options .extra-text {
+        text-align: center;
+    }
+}
+
+@media only screen and(min-width: 768px) {
+    .tarif-options .option-select {
+        margin: 10px auto;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    .tarif-options .option-select {
+        margin: 32px auto 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mj-button {
+        padding: 16px 24px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .mj-button {
+        padding: 16px 40px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 960px) {
+    .css-tooltipped .css-tooltip, .css-tooltipped .css-tooltip-992 {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        padding-top: 30px;
+    }
+}
+
+

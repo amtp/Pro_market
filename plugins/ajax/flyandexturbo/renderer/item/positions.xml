@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderer>
+	<positions layout="default">		
+		<position name="image">Header Image</position>
+		<position name="content">Content</position>
+	</positions>	
+</renderer>

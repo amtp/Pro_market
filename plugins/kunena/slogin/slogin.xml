@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension version="2.5" type="plugin" group="kunena" method="upgrade">
+	<name>plg_kunena_slogin</name>
+	<version>1.1.0</version>
+	<creationDate>2016-12-12</creationDate>
+	<author>getsite.org</author>
+	<authorEmail>admin@getsite.org</authorEmail>
+	<authorUrl>http://getsite.org</authorUrl>
+	<copyright>www.getsite.org</copyright>
+	<license>GNU/GPLv3 or later</license>
+	<description>Плагин интеграции kunena и slogin</description>
+		<updateservers>
+	<server type="extension" name="plg_kunena_slogin" priority="1"><![CDATA[http://getsite.org/index.php?option=com_ars&view=update&task=stream&format=xml&id=3&dummy=extension.xml]]></server>
+	</updateservers>
+	<files>
+		<filename plugin="slogin">slogin.php</filename>
+		<filename>avatar.php</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+		<field name="avatar" type="list" default="1" label="включить аватары slogin?" description="включить аватары slogin?" class="inputbox">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="profile" type="list" default="1" label="включить профиль kunena?" description="включить профиль kunena?" class="inputbox">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="K2">
+        <field name="enable" type="radio" default="0" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_ENABLE_LABEL" 
+            description="PLG_FLYANDEXTURBO_ENABLE_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="k2_cat_filter"
+            type="radio"
+            default="0" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_K2_CATEGORIES_FILTER_LABEL" 
+            description="PLG_FLYANDEXTURBO_K2_CATEGORIES_FILTER_DESC">
+            <option value="0">PLG_FLYANDEXTURBO_K2_CATEGORIES_ALL</option>
+            <option value="1">PLG_FLYANDEXTURBO_K2_CATEGORIES_SELECT</option>
+        </field>
+
+        <field
+            name="k2_catid"
+            type="flk2categories"
+            label="PLG_FLYANDEXTURBO_K2_CATEGORIES_LABEL"
+            description="PLG_FLYANDEXTURBO_K2_CATEGORIES_DESC"
+            multiple="true"
+            showon="k2_cat_filter:1"
+            />
+
+        <field name="k2_get_children" 
+            type="radio" 
+            default="0" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_K2_GET_CHILDREN_LABEL" 
+            description="PLG_FLYANDEXTURBO_K2_GET_CHILDREN_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="k2_show_featured"
+            type="list"
+            label="PLG_FLYANDEXTURBO_CONTENT_FEATURED_LABEL"
+            description="PLG_FLYANDEXTURBO_CONTENT_FEATURED_DESC"
+            default=""
+            >
+            <option value="">PLG_FLYANDEXTURBO_CONTENT_FEATURED_INCLUDE</option>
+            <option value="0">PLG_FLYANDEXTURBO_CONTENT_FEATURED_EXCLUDE</option>
+            <option value="1">PLG_FLYANDEXTURBO_CONTENT_FEATURED_EXCLUDE_ONLY</option>
+        </field>
+
+        <field name="k2_add_image" 
+            type="radio" 
+            default="1" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_K2_ADD_IMAGE_LABEL" 
+            description="PLG_FLYANDEXTURBO_K2_ADD_IMAGE_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="k2_image_size"
+            type="list"
+            label="PLG_FLYANDEXTURBO_K2_IMAGE_SIZE_LABEL"
+            description="PLG_FLYANDEXTURBO_K2_IMAGE_SIZE_DESC"
+            default=""
+            showon="k2_add_image:1"
+            >
+            <option value="xsmall">XSmall</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">XLarge</option>
+        </field>
+
+        <field
+            name="k2_count"
+            type="text"
+            label="PLG_FLYANDEXTURBO_COUNT_LABEL"
+            description="PLG_FLYANDEXTURBO_COUNT_DESC"
+            default="500"
+        />
+    </fieldset>
+</form>

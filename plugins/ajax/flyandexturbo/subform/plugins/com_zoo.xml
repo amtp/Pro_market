@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="Zoo">
+        <field name="enable" type="radio" default="0" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_ENABLE_LABEL" 
+            description="PLG_FLYANDEXTURBO_ENABLE_DESC"
+            hint="PLG_FLYANDEXTURBO_ENABLE_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="zoo_apps" type="flzooapplications" 
+            default=""
+            label="PLG_FLYANDEXTURBO_ZOO_APPS_LABEL"
+            description="PLG_FLYANDEXTURBO_ZOO_APPS_DESC" 
+            hint="PLG_FLYANDEXTURBO_ZOO_APPS_DESC"
+            multiple="true" />
+
+        <field name="zoo_types" type="flzootypes" 
+            default=""
+            label="PLG_FLYANDEXTURBO_ZOO_TYPES_LABEL"
+            description="PLG_FLYANDEXTURBO_ZOO_TYPES_DESC" 
+            hint="PLG_FLYANDEXTURBO_ZOO_TYPES_DESC"
+            multiple="true" />
+
+        <field name="zoo_add_image" 
+            type="radio" 
+            default="1" 
+            class="btn-group"
+            label="PLG_FLYANDEXTURBO_ZOO_ADD_IMAGE_LABEL" 
+            description="PLG_FLYANDEXTURBO_ZOO_ADD_IMAGE_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="zoo_count" type="text" default="500" 
+            size="5" 
+            label="PLG_FLYANDEXTURBO_COUNT_LABEL" 
+            description="PLG_FLYANDEXTURBO_COUNT_DESC"
+            hint="PLG_FLYANDEXTURBO_COUNT_DESC" />
+    </fieldset>
+</form>

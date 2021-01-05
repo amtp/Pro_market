@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>Plugin Rating</name>
+	<author>xT</author>
+	<creationDate>MAR 2020</creationDate>
+	<copyright>(C) xT</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>support@516.ru</authorEmail>
+	<authorUrl>www.516.ru</authorUrl>
+	<version>1.4.0</version>
+	<description><![CDATA[support 516.ru]]></description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">assets/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">assets/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+		<filename plugin="vrvote">vrvote.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>images</folder>
+	</files>
+</extension>

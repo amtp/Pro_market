@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="ajax" method="upgrade" >
+	<name>FL Yandex Turbo</name>
+	<author>Васюков Дмитрий</author>
+	<creationDate>July 2017</creationDate>
+	<copyright>Copyright 2018 FictionLabs. All rights reserved</copyright>
+	<license>http://opensource.org/licenses/GPL-2.0 GNU/GPLv2 only</license>
+	<authorEmail>info@fictionlabs.ru</authorEmail>
+	<authorUrl>https://fictionlabs.ru</authorUrl>
+	<version>2.3</version>
+	<description><![CDATA[PLG_FLYANDEXTURBO_DESC]]></description>
+	<files>
+		<filename plugin="flyandexturbo">flyandexturbo.php</filename>	
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>plugins</folder>
+		<folder>renderer</folder>
+		<folder>subform</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.plg_ajax_flyandexturbo.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_ajax_flyandexturbo.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">		
+			<fieldset name="basic" addfieldpath="/plugins/ajax/flyandexturbo/fields">
+				<field name="channel_code" type="flinfo" />
+
+				<field name="channel_title" type="text" default=""
+					label="PLG_FLYANDEXTURBO_TITLE_LABEL"
+					description="PLG_FLYANDEXTURBO_TITLE_DESC" 
+					hint="PLG_FLYANDEXTURBO_TITLE_LABEL" />
+
+				<field name="channel_description" type="text" default="" 
+					label="PLG_FLYANDEXTURBO_DESC_LABEL" 
+					description="PLG_FLYANDEXTURBO_DESC_DESC"
+					hint="PLG_FLYANDEXTURBO_DESC_LABEL" />
+
+				<field name="channel_language" type="text" default="" 
+					label="PLG_FLYANDEXTURBO_LANG_LABEL" 
+					description="PLG_FLYANDEXTURBO_LANG_DESC"
+					hint="PLG_FLYANDEXTURBO_LANG_LABEL" />
+
+				<field name="items_author" type="radio" default="1" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_AUTHOR_LABEL"
+					description="PLG_FLYANDEXTURBO_AUTHOR_DESC">
+					<option value="0">PLG_FLYANDEXTURBO_AUTHOR_SET</option>
+					<option value="1">PLG_FLYANDEXTURBO_AUTHOR_ITEM</option>
+				</field>
+
+				<field name="items_author_name" type="text" default="" 
+					label="PLG_FLYANDEXTURBO_AUTHOR_NAME_LABEL" 
+					description="PLG_FLYANDEXTURBO_AUTHOR_NAME_DESC"
+					showon="items_author:0"
+					hint="PLG_FLYANDEXTURBO_AUTHOR_NAME_LABEL" />
+
+                <field name="items_tags" type="fllist" default="h1,h2,h3,h4,h5,h6,p,img,a,table,tr,td,figure"
+		            label="PLG_FLYANDEXTURBO_TAGS_LABEL"
+		            description="PLG_FLYANDEXTURBO_TAGS_DESC"
+		            multiple="true">
+		            <option value="h1">h1</option>
+		            <option value="h2">h2</option>
+		            <option value="h3">h3</option>
+		            <option value="h4">h4</option>
+		            <option value="h5">h5</option>
+		            <option value="h6">h6</option>
+		            <option value="div">div</option>
+		            <option value="p">p</option>
+		            <option value="a">a</option>
+		            <option value="img">img</option>
+		            <option value="source">source</option>
+		            <option value="table">table</option>
+		            <option value="tr">tr</option>
+		            <option value="td">td</option>
+		            <option value="figure">figure</option>
+		            <option value="br">br</option>
+		            <option value="ul">ul</option>
+		            <option value="ol">ol</option>
+		            <option value="li">li</option>
+		            <option value="b">b</option>
+		            <option value="strong">strong</option>
+		            <option value="i">i</option>
+		            <option value="em">em</option>
+		            <option value="sup">sup</option>
+		            <option value="sub">sub</option>
+		            <option value="ins">ins</option>
+		            <option value="del">del</option>
+		            <option value="small">small</option>
+		            <option value="big">big</option>
+		            <option value="pre">pre</option>
+		            <option value="abbr">abbr</option>
+		            <option value="u">u</option>
+		        </field>
+
+		        <field name="enable_cache" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_ENABLE_CACHE_LABEL" 
+					description="PLG_FLYANDEXTURBO_ENABLE_CACHE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					label="PLG_FLYANDEXTURBO_CACHE_TIME_LABEL"
+					description="PLG_FLYANDEXTURBO_CACHE_TIME_DESC"
+					default="1440"
+					showon="enable_cache:1"
+				/>
+
+				<field name="enable_plugins" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_ENABLE_PLUGINS_LABEL" 
+					description="PLG_FLYANDEXTURBO_ENABLE_PLUGINS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+		        <field name="note_item_social" type="note" label="PLG_FLYANDEXTURBO_SHARE_INFO_LABEL" description="PLG_FLYANDEXTURBO_SHARE_DESC" />
+
+		        <field name="items_social" type="radio" default="1" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_SHARE_LABEL"
+					description="PLG_FLYANDEXTURBO_SHARE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+		        <field name="items_social_options" type="fllist" default="facebook,google,odnoklassniki,telegram,twitter,vkontakte"
+		            label="PLG_FLYANDEXTURBO_PROVIDER_LABEL"
+		            description="PLG_FLYANDEXTURBO_PROVIDER_DESC"
+		            showon="items_social:1"
+		            multiple="true">
+		            <option value="facebook">Facebook</option>
+		            <option value="google">Google</option>
+		            <option value="odnoklassniki">Odnoklassniki</option>
+		            <option value="telegram">Telegram</option>
+		            <option value="twitter">Twitter</option>
+		            <option value="vkontakte">Vkontakte</option>
+		        </field>
+
+		        <field name="note_item_analitics" type="note" label="PLG_FLYANDEXTURBO_ANALITIC_INFO_LABEL" description="PLG_FLYANDEXTURBO_ANALITIC_INFO_DESC" />
+	
+				<field name="items_analitics" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_ANALITIC_LABEL"
+					description="PLG_FLYANDEXTURBO_ANALITIC_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="items_analitics_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/analitics.xml" 
+                    min="1"
+                    max="5"
+                    multiple="true"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    groupByFieldset="false"
+                    label="PLG_FLYANDEXTURBO_ANALITIC_SYSTEM_LABEL" 
+                    showon="items_analitics:1"
+                    buttons="add,remove"
+                    description="PLG_FLYANDEXTURBO_ANALITIC_SYSTEM_DESC" />
+
+				<field name="note_item_ads" type="note" label="PLG_FLYANDEXTURBO_ADS_INFO_LABEL" description="PLG_FLYANDEXTURBO_ADS_INFO_DESC" />
+
+				<field name="items_advertisement" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_ADS_LABEL"
+					description="PLG_FLYANDEXTURBO_ADS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="items_advertisement_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/advertisement.xml" 
+                    min="1" 
+                    max="2"
+                    multiple="true"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    groupByFieldset="false"
+                    label="PLG_FLYANDEXTURBO_ADS_OPTIONS_LABEL" 
+                    showon="items_advertisement:1"
+                    buttons="add,remove"
+                    description="PLG_FLYANDEXTURBO_ADS_OPTIONS_DESC" />
+
+                <field name="note_item_callback" type="note" label="PLG_FLYANDEXTURBO_CALLBACK_INFO_LABEL" description="PLG_FLYANDEXTURBO_CALLBACK_INFO_DESC" />
+
+                <field name="items_callback" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_CALLBACK_LABEL"
+					description="PLG_FLYANDEXTURBO_CALLBACK_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="items_callback_stick" type="fllist" default=""
+					label="PLG_FLYANDEXTURBO_CALLBACK_STICK_LABEL"
+					description="PLG_FLYANDEXTURBO_CALLBACK_STICK_DESC" 
+					hint="PLG_FLYANDEXTURBO_CALLBACK_STICK_LABEL" >
+					<option value="left">PLG_FLYANDEXTURBO_CALLBACK_STICK_LEFT</option>
+					<option value="right">PLG_FLYANDEXTURBO_CALLBACK_STICK_RIGHT</option>
+					<option value="false">PLG_FLYANDEXTURBO_CALLBACK_STICK_FALSE</option>
+				</field>
+
+				<field name="items_callback_title" type="text" default=""
+					showon="items_callback_stick:false"
+					label="PLG_FLYANDEXTURBO_CALLBACK_TITLE_LABEL"
+					description="PLG_FLYANDEXTURBO_CALLBACK_TITLE_DESC" 
+					hint="PLG_FLYANDEXTURBO_CALLBACK_TITLE_LABEL" />
+
+                <field name="items_callback_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/callback.xml" 
+                    min="1" 
+                    multiple="true"
+                    layout="joomla.form.field.subform.repeatable-table"
+                    groupByFieldset="false"
+                    label="PLG_FLYANDEXTURBO_CALLBACK_OPTIONS_LABEL" 
+                    showon="items_callback:1"
+                    buttons="add,remove"
+                    description="PLG_FLYANDEXTURBO_CALLBACK_OPTIONS_DESC" />
+
+                <field name="note_item_form" type="note" label="PLG_FLYANDEXTURBO_FORM_INFO_LABEL" description="PLG_FLYANDEXTURBO_FORM_INFO_DESC" />
+
+                <field name="items_form" type="radio" default="0" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_FORM_LABEL"
+					description="PLG_FLYANDEXTURBO_FORM_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="items_form_type" type="radio" default="item" 
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_FORM_TYPE_LABEL"
+					description="PLG_FLYANDEXTURBO_FORM_TYPE_DESC">
+					<option value="item">PLG_FLYANDEXTURBO_FORM_TYPE_ITEM</option>
+					<option value="button">PLG_FLYANDEXTURBO_FORM_TYPE_BUTTON</option>
+				</field>
+
+		        <field name="items_form_email" type="email" default="" 
+		            label="PLG_FLYANDEXTURBO_FORM_EMAIL_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_EMAIL_DESC" />
+
+		        <field name="items_form_company" type="text" default="" 
+		            label="PLG_FLYANDEXTURBO_FORM_COMPANY_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_COMPANY_DESC" />
+
+		        <field name="items_form_link" type="text" default="" 
+		            label="PLG_FLYANDEXTURBO_FORM_LINK_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_LINK_DESC" />
+
+		        <field name="items_form_bgcolor" type="text" default="" 
+		        	showon="items_form_type:button"
+		            label="PLG_FLYANDEXTURBO_FORM_BGCOLOR_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_BGCOLOR_DESC" />
+
+		        <field name="items_form_color" type="text" default="" 
+		        	showon="items_form_type:button"
+		            label="PLG_FLYANDEXTURBO_FORM_COLOR_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_COLOR_DESC" />
+
+		        <field name="items_form_text" type="text" default="" 
+		        	showon="items_form_type:button"
+		            label="PLG_FLYANDEXTURBO_FORM_TEXT_LABEL" 
+		            description="PLG_FLYANDEXTURBO_FORM_TEXT_DESC" />
+
+		        <field name="items_form_bold" type="radio" default="false" 
+		        	showon="items_form_type:button"
+					class="btn-group"
+					label="PLG_FLYANDEXTURBO_FORM_BOLD_LABEL"
+					description="PLG_FLYANDEXTURBO_FORM_BOLD_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="Content">
+				<field name="content_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/plugins/com_content.xml" 
+                    layout="joomla.form.field.subform.default"
+                    label="PLG_FLYANDEXTURBO_CONTENT_OPTIONS_LABEL" 
+                    description="PLG_FLYANDEXTURBO_CONTENT_OPTIONS_DESC"
+                    labelclass="hidden" />
+			</fieldset>
+
+			<fieldset name="Zoo">
+				<field name="zoo_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/plugins/com_zoo.xml" 
+                    layout="joomla.form.field.subform.default"
+                    label="PLG_FLYANDEXTURBO_ZOO_OPTIONS_LABEL" 
+                    description="PLG_FLYANDEXTURBO_ZOO_OPTIONS_DESC"
+                    labelclass="hidden" />
+			</fieldset>
+
+			<fieldset name="K2">
+				<field name="k2_options" 
+                    type="subform" 
+                    formsource="/plugins/ajax/flyandexturbo/subform/plugins/com_k2.xml" 
+                    layout="joomla.form.field.subform.default"
+                    label="PLG_FLYANDEXTURBO_K2_OPTIONS_LABEL" 
+                    description="PLG_FLYANDEXTURBO_K2_OPTIONS_DESC"
+                    labelclass="hidden" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

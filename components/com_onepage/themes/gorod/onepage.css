@@ -1,0 +1,259 @@
+input.invalid {border: 3px solid #ff0000}
+
+.dob0 h2 {
+    margin-bottom:10px;
+}
+.top_cart {
+	padding: 10px;
+	background: #fff;
+}
+.op_col1,.op_col2,.op_col3,
+.op_col4,.op_col5,.op_col6,
+.op_col7, .op_col2_2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.op_col4,.op_col5,.op_col6 {text-align: center}
+.op_col6 .inputbox {
+text-align: center;
+width: 15px;
+height: 15px;
+border-radius: 0;
+padding: 5px;
+border: 1px solid #ccc;
+display: inline-block;
+vertical-align: middle;
+}
+.op_col7 {
+    text-align: right;
+    width: 17%;	
+}
+.op_col1 {width: 100px; padding:5px 0}
+.op_col2, .op_col2_2 {width: 39%}
+.op_col4 {width:9%}
+.op_col5 {width: 12%}
+.op_col6 {width:14%}
+.col2 {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+.op_basket_header {
+	padding: 3px 0;
+	margin-bottom: 5px;
+	font-weight: bold
+}
+a.opc_product_name {
+	text-decoration: none;
+	border-bottom:1px dashed;
+	font-size: 16px
+}
+.vmshipment, .vmpayment {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+	cursor: pointer;
+}
+.vmshipment:hover {
+
+}
+.vmCartShipmentLogo, .vmpayment img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+}
+span.vmshipment_name, span.vmpayment_name {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+	display:block
+}
+span.vmshipment_period {
+	display: block;
+	font-size: 12px;
+}
+.vmshipment_cost {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.vmshipment_cost span {font-size: 12px}
+.vmshipment_cost span.mif-rouble {font-weight:normal; font-size: 14px}
+#ajaxshipping br {display: none}
+#ajaxshipping .opc_ship_wrap, .opc_payment_wrap {
+	cursor:pointer;
+	border: 2px solid #fff;
+	padding: 5px 10px
+}
+#ajaxshipping .selected, .opc_payment_wrap.selected{
+    padding: 5px 10px;
+	border:2px solid
+}
+
+.op_basket_row {
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+	border-top: 1px dashed;
+}
+.cupon_section {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+}
+.coupon_input_section {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55%;
+}
+.details-button {
+	display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+.details-button input {
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+	background:#3b5998
+}
+
+input#coupon_code {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 95%;
+}
+.formLabel, .after_select, .before_select{display: none}
+.blocks_cart, .blocks_dostavka {
+	padding: 10px;
+	margin: 5px;
+	background: #fff
+}
+.blocks_cart h4, .blocks_dostavka h4 {
+    border-bottom: 1px dashed;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+.blocks_cart input {
+width: 93%;
+margin-bottom: 5px;
+border: 1px solid #ccc;
+padding: 8px;
+}
+.label_selects {
+	display: inline-block;
+	vertical-align: middle;
+	clear: none!important
+}
+.middle_select {
+	display: inline-block;
+	vertical-align: middle;	
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+.middle_select  select {border-radius: 20px}
+#customer_note_field {font-size: 13px; width: 95%}
+.itogo {
+	text-align: right;
+	font-size: 16px;
+}
+#tt_order_subtotal_txt, #tt_shipping_rate_txt,#tt_total_txt  {	margin-right: 10px}
+#tt_order_subtotal, #tt_shipping_rate {font-size: 20px; font-weight: 300}
+#tt_total_txt {font-size: 17px; }
+#tt_total {
+    font-size: 28px;
+    font-weight: 400;
+}
+.bottom_button {text-align: center}
+#ajaxshipping input, .opc_payment_wrap input {display: none}
+.opc_PricesalesPrice {
+	display: inline;
+	font-weight: bold;
+}
+.cupon_info {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 11px;
+	width: 23%
+}
+.cart_title_info {
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cart_title_info a.button {
+	display: inline-block; 
+	font-size: 14px; 
+	margin-top: 10px; 
+	padding:5px 25px;
+	color:#fff;
+	text-decoration:none;
+}
+.col2_info {
+	font-size: 12px;
+	margin-bottom: 10px
+}
+.vmpayment_description, .vmshipment_description {
+	display: inline-block!important;
+	font-size: 12px
+}
+.address_field_name {
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #eee;
+}
+.address_field_value {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #eee;	
+}
+button#confirmbtn_button {
+color: #fff;
+font-size:18px;
+text-transform: uppercase;
+border-bottom: 1px solid #141414;
+display: block;
+margin: 0 auto;
+text-align: center;
+background:#eb4120;
+
+text-decoration: none;
+border:none;
+padding: 8px 30px;
+cursor: pointer;
+margin-bottom: 20px
+}
+
+button#confirmbtn_button h4 {color: #fff; font-weight:normal}
+
+a.updatebtn {
+	display:inline-block;
+	vertical-align:middle;
+	width:22px;
+	height:22px;
+}
+a.deletebtn {
+	display:inline-block;
+	vertical-align:middle;
+	width:22px;
+	height:22px;
+}
+.cf4all_color_btn_small {
+	position:relative;
+	top:5px
+}
+.cf4all_outside_label {display:none}
