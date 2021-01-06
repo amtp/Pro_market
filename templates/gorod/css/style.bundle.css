@@ -36,7 +36,7 @@
     padding: 0 0;
     border: 2px solid #3d7679;
     border-radius: 5px;
-    box-shadow: 0px -600px 0 600px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -600px 0 600px rgba(0, 0, 0, 0.3);
 
 
 }
@@ -55,6 +55,7 @@
     background: #434547;
     padding-top: 2px;
 }
+
 
 #searchflex-bg .m-srch-panel.in {
     opacity: 1;
@@ -94,14 +95,14 @@
     background-color: #ffffff;
     bottom: 100%;
     top: unset !important;
-    left: 0px !important;
+    left: 0 !important;
     min-width: 160px !important;
     max-height: 180px !important;
     width: calc(100% + 38px) !important;
     padding: 0 0;
     border: 2px solid #08a6ae !important;
     border-radius: 3px;
-    box-shadow: 0px -600px 0 600px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 -600px 0 600px rgba(0, 0, 0, 0.3) !important;
 }
 
 .autocomplete-suggestion {
